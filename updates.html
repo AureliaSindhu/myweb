@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <title> Aurelia Juan </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width = device-width, initial-scale= 1">
+    <link rel="icon" href="./pics/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Mochiy+Pop+P+One&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "updates-bg"> 
+<!-- text -->
+    <div class="JAN22">
+        <h1> Here's what my first and a half month of 2022 looks like</h1>
+        <p> click on the buttons to change the grid view</p>
+    </div>
+<!-- NavBar -->
+    <header>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> HOME </a> </li>
+                    <li> <a href="index.html#division1"> ME </a> </li>
+                    <li> <a href="index.html#division3"> MUSIC </a> </li>
+                    <li> <a href="contacts.html"> CONTACTS </a> </li>
+                    <li> <a href="updates.html"> UPDATES </a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="./pics/icon.png" id="menu">
+        </div>
+    </header>
+
+    <!-- Header -->
+<div class="header" id="myHeader">
+    <button class="btn active" onclick="two()">2</button>
+    <button class="btn" onclick="three()">3</button>
+    <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="./pics/one.jpg" style="width:100%">
+    <img src="./pics/two.jpg" style="width:100%">
+    <img src="./pics/three.jpg" style="width:100%">
+    <img src="./Pics/four.jpg" style="width:100%">
+    <img src="./pics/five.jpg" style="width:100%">
+    <img src="./pics/six.jpg" style="width:100%">
+    <img src="./pics/seven.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./pics/eight.jpg" style="width:100%">
+    <img src="./pics/nine.jpg" style="width:100%">
+    <img src="./pics/ten.jpg" style="width:100%">
+    <img src="./pics/eleven.jpg" style="width:100%">
+    <img src="./pics/twelve.jpg" style="width:100%">
+    <img src="./pics/thirteen.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="./pics/fourteen.jpg" style="width:100%">
+    <img src="./pics/fifteen.jpg" style="width:100%">
+    <img src="./pics/sizteen.jpg" style="width:100%">
+    <img src="./pics/seventeen.jpg" style="width:100%">
+    <img src="./pics/eighteen.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./pics/twentyone.jpg" style="width:100%">
+    <img src="./pics/twentytwo.jpg" style="width:100%">
+    <img src="./pics/twentythree.jpg" style="width:100%">
+    <img src="./pics/twentyfour.jpg" style="width:100%">
+    <img src="./pics/nineteen.jpg" style="width:100%">
+    <img src="./pics/twenty.jpg" style="width:100%">
+  </div>
+</div>
+
+<div class="cs">
+    <p> cheers to more new memories!</p>
+</div>
+</section>
+
+<!--closingBar-->
+<section id="closing">
+    <div class="creds">
+        <p>  thanks for visiting! have a nice day yall!! </p>
+    </div>
+    <div class="credits-desc">
+        <div class="icon-">
+            <i class="fas fa-heart"></i>
+        </div>
+        <p>Lia</p>
+    </div>
+    <div class="bgClose"></div>
+</section>
+
+<script>
+   
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.top = "-50px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.top == "-50px"){
+            sideNav.style.top = "0";
+            menu.src = "./pics/close.png";
+        }
+        else{
+            sideNav.style.top = "-50px"
+            menu.src = "./pics/icon.png";
+        }
+    } 
+</script>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Two images 
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%"; 
+    elements[i].style.flex = "50%";
+  }
+}
+//Three images
+function three() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "30%"; 
+    elements[i].style.flex = "30%";
+  }
+}
+
+// Four images 
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%"; 
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var links = new Array();
+links[0] = "https://www.youtube.com/watch?v=JQ-2sk2ELJI";
+links[1] = "https://www.youtube.com/watch?v=n9ta1Pgeu80";
+links[2] = "https://www.youtube.com/watch?v=Fp8msa5uYsc";
+links[3] = "https://www.youtube.com/watch?v=4f1o3_kvlHQ";
+links[4] = "https://www.youtube.com/watch?v=DOBjwlfIZdE";
+
+function openLink() {
+  var i = Math.floor(Math.random() * links.length);
+  parent.location = links[i];
+  return false;
+}
+
+</script>
+</head>
+<body onload="openLink();">
+</body>
+</html>

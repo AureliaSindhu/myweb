@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <title> Aurelia Juan </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="pics/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Mochiy+Pop+P+One&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<section id = "banner">
+ <!-- img src="Pics/logo.png" class="logo"--> 
+    <div class="banner-text">
+        <h1> Aurelia Juan S</h1>    
+    <div class="banner-btn">
+        <a href="random.html" target="blank"><span></span> <i class="fa fa-music"> </i>  jam a random song (my current fav)!</a>
+    </div>
+    </p>
+    </div>
+
+    <div id="sosmed-bar">
+        <div class="s-icon">
+            <a href="https://www.instagram.com/dayswithlia/" target="blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://open.spotify.com/user/aurelia.sindhu?si=39b75d9592ae4d3c" target="blank"><i class="fa fa-spotify"></i></a>
+            <a href="https://www.youtube.com/channel/UCb8ndl2PdjHTteVF-PLgK4w" target="blank"><i class="fa fa-youtube"></i></a>
+    
+        </div>
+    </div>
+</section>
+<header>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li> <a href="#banner"> HOME </a> </li>
+            <li> <a href="#division1"> ME </a> </li>
+            <li> <a href="#division3"> MUSIC </a> </li>
+            <li> <a href="contacts.html"> CONTACTS </a> </li>
+            <li> <a href="updates.html"> UPDATES </a> </li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="pics/icon.png" id="menu">
+</div>
+
+
+<!-- Division 1: Abt Me -->
+<section id="division1">
+    <div class="title-text">
+    <p> about me </p>
+    <h1> introduction </h1>
+    </div>
+
+    <div class="introduction">
+        <p> Here's a lil' info about me. First of all welcome to my website!
+            And here meet a normal highschooler, who's curently finishing her studies in Saint Ursula Jakarta.
+            She is known to have a lot of hobbies. 
+            Curious about her aren't we? Check out more in this website! Stroll around through every corner! 
+            Bet you won't regret it :) </p>
+    </div>
+    
+    <div class="bio">
+        <a href="abt-me.html"><span></span> More about me </a>
+    </div>
+</sextion>
+
+<!-- Division 2: SOSMED-->
+<section id="division2">
+    <div class="title2">
+        <h1> other (related) social media: </h1>
+    </div>
+    <div class= "row-sosmed">
+
+<div class="container">
+    <a href="https://www.linkedin.com/in/aurelia-sindhu-b14280216/" targer="blank"><img src="pics/instagram.jpeg" class="image"></a>
+    <div class="middle">
+      <div class="text"> linkedin </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <a href="abt-me.html#art.acc"><img src="pics/tiktok.png"  class="image"></a>
+    <div class="middle">
+      <div class="text"> art account </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <a href="https://www.instagram.com/go.dlucky/" target="blank"><img src="pics/youtube.jpeg" class="image"></a>
+    <div class="middle">
+      <div class="text"> my dog's ig </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--Division 3: spotify-->
+<section id="division3">
+    <div class="spoti">
+        <h1>  some recommended playlist</h1>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6Sa2dKZ3qpqH5bRs9v3m0J?utm_source=generator" width="80%" 
+        height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <div class="spoti-btn">
+        <a href="https://open.spotify.com/user/aurelia.sindhu?si=39b75d9592ae4d3c" target=blank><span></span> Find me on spotify </a>
+    </div>
+</section>
+
+<!--closingBar-->
+<section id="closing">
+    <div class="creds">
+        <p>  thanks for visiting! have a nice day yall!! </p>
+    </div>
+    <div class="credits-desc">
+        <div class="icon-">
+            <i class="fas fa-heart"></i>
+        </div>
+        <p>Lia</p>
+    </div>
+    <div class="bgClose"></div>
+</section>
+
+<script>
+   
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.top = "-50px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.top == "-50px"){
+            sideNav.style.top = "0";
+            menu.src = "pics/close.png";
+        }
+        else{
+            sideNav.style.top = "-50px"
+            menu.src = "pics/icon.png";
+        }
+    } 
+</script>
+</body>
+
+</html>

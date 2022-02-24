@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title> Aurelia Juan </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./pics/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Mochiy+Pop+P+One&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<section id = "contacts-bg">
+    <div class="contacts-header">
+        <h1> My Contact</h1>
+    </div>
+    <div class="contacts-desc">
+        <p> Hi there! Feel free to contact me with any social media! 
+            You can dm me through <a href="https://www.instagram.com/dayswithlia/" target="blank"> instagram</a> or email me at <a href="mailto: liaaa.juans@gmail.com" target="blank"> liaaa.juans@gmail.com</a>.
+            The response may take 3-5 business days. 
+            If it is urgent, you may text at <a href="https://api.whatsapp.com/send?phone=081901001688" target="blank"> +62 81901001688</a>.
+            Thank you!</p>   
+    </div>
+</section>
+<header>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li> <a href="index.html"> HOME </a> </li>
+            <li> <a href="index.html#division1"> ME </a> </li>
+            <li> <a href="index.html#division3"> MUSIC </a> </li>
+            <li> <a href="contacts.html"> CONTACTS </a> </li>
+            <li> <a href="updates.html"> UPDATES </a> </li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="./pics/icon.png" id="menu">
+</div>
+
+<!--closingBar-->
+<section id="closing2">
+    <div class="creds">
+        <p>  thanks for visiting! have a nice day yall!! </p>
+    </div>
+    <div class="credits-desc">
+        <div class="icon-">
+            <i class="fas fa-heart"></i>
+        </div>
+        <p>Lia</p>
+    </div>
+    <div class="bgClose"></div>
+</section>
+
+<script>
+   
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.top = "-50px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.top == "-50px"){
+            sideNav.style.top = "0";
+            menu.src = "pics/close.png";
+        }
+        else{
+            sideNav.style.top = "-50px"
+            menu.src = "./pics/icon.png";
+        }
+    } 
+</script>
+</body>
+
+</html>
